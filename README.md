@@ -1,5 +1,5 @@
-# esphome-vitoair
-CAN-bus connection to Viessmann Vitoair using ESPhome
+# esphome-Vitocharge VX3
+CAN-bus connection to Viessmann Vitocharge VX3 using ESPhome
 
 ## credits:
 https://github.com/open3e/open3e/discussions/29#discussioncomment-8117128
@@ -9,7 +9,7 @@ Thanks for the great projekt and the help!
 ## Resources:
 understanding the can-bus protocoll: https://www.csselectronics.com/pages/uds-protocol-tutorial-unified-diagnostic-services
 
-datapoints of the vitoair: https://github.com/open3e/open3e/blob/master/Open3EdatapointsVair.py
+datapoints of the Vitocharge VX3: [https://github.com/open3e/open3e/blob/master/Open3EdatapointsVair.py](https://github.com/open3e/open3e/blob/master/src/open3e/Open3EdatapointsVx3.py)
 
 description of the datapoints: https://github.com/open3e/open3e/blob/master/Open3Edatapoints.py
 
@@ -67,7 +67,7 @@ canbus:
               if(x[0]==0x10 and x[1]==0x0C and x[2]==0x62) {
                   float temp =  float(int16_t((x[5])+((x[6])<<8)))*0.1;
                   int did = int16_t((x[4])+((x[3])<<8));
-                  //ESP_LOGD("vitoair", "%d %4.1f", did, temp);
+                  //ESP_LOGD("Vitocharge VX3", "%d %4.1f", did, temp);
                   switch(did) {
                       case 327:
                         id(va327).publish_state(temp);
