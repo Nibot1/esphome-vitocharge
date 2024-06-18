@@ -9,7 +9,7 @@ Thanks for the great projekt and the help!
 ## Resources:
 understanding the can-bus protocoll: https://www.csselectronics.com/pages/uds-protocol-tutorial-unified-diagnostic-services
 
-datapoints of the Vitocharge VX3: [https://github.com/open3e/open3e/blob/master/Open3EdatapointsVair.py](https://github.com/open3e/open3e/blob/master/src/open3e/Open3EdatapointsVx3.py)
+datapoints of the Vitocharge VX3: https://github.com/open3e/open3e/blob/master/src/open3e/Open3EdatapointsVx3.py
 
 description of the datapoints: https://github.com/open3e/open3e/blob/master/Open3Edatapoints.py
 
